@@ -1,0 +1,313 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #fff;
+    color: #ea0b0b;
+    padding: 1em 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1em;
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+    margin-right: 1em;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    background-color: #fff;
+}
+
+nav ul li {
+    margin: 0 1em;
+}
+
+nav ul li a {
+    display: block;
+    padding: 0.5em 1em;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.home-link {
+    background-color: #ea0b0b;
+    color: #fff;
+}
+
+.about-link {
+    background-color: #038C3E;
+    color: #fff;
+}
+
+.services-link {
+    background-color: #f5b102;
+    color: #fff;
+}
+
+.contact-link {
+    background-color: #049DD9;
+    color: #fff;
+}
+
+nav ul li a:hover {
+    opacity: 0.8;
+}
+
+section {
+    padding: 2em;
+    background-color: #fff;
+    margin: 1em 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background-color: #fff;
+    color: #F24444;
+    text-align: center;
+    padding: 1em 0;
+    width: 100%;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.team-member {
+    display: flex;
+    align-items: center;
+    margin: 2em 0;
+}
+
+.team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 2px solid #4CAF50;
+    margin-right: 1em;
+}
+#doc1{
+    width: 150px;
+    height: 150px;
+}
+#doc2{
+    width: 150px;
+    height: 150px;
+}
+#doc3{
+ width: 150px;
+ height: 150px;
+}
+
+.team-info {
+    flex: 1;
+}
+
+.team-info h3 {
+    margin: 0.5em 0 0.2em;
+}
+
+.team-info p {
+    margin: 0;
+    color: #555;
+}
+
+.carousel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-image {
+    min-width: 100%;
+    max-height: 750px;
+    object-fit: cover;
+}
+
+.carousel-images img {
+    width: 100%;
+    border-radius: 8px;
+    
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 0.5em;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.carousel-prev {
+    left: 0.5em;
+}
+
+.carousel-next {
+    right: 0.5em;
+}
+
+p {
+    text-align: left;
+}
+
+#ortho {
+    color: #ea0b0b;
+}
+
+#gyno {
+    color:#038C3E;
+}
+
+#physio {
+    color: #049DD9;
+}
+
+#sono {
+    color: #f5b102;
+}
+
+#ent {
+    color: #ea0b0b;
+}
+
+#path {
+    color:  #038C3E;
+}
+
+#wel {
+    color: #ea0b0b;
+}
+
+#mission {
+    color: #038C3E;
+}
+
+#vision {
+    color: #f5b102;
+}
+
+#value {
+    color: #049DD9;
+}
+
+#teams {
+    color: #ea0b0b;
+}
+
+#patient {
+    color: #038C3E;
+}
+
+#ab {
+    background-color:#038C3E;
+    color: white;
+    width: 130px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+#ser {
+    background-color: #f5b102;
+    color: white;
+    width: 130px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+#Con {
+    background-color: #049DD9;
+    color: white;
+    width: 160px;
+    text-align: center;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+}
+
+#ssh {
+    color: #ea0b0b;
+}
+
+#faci {
+    color: #f5b102 ;
+}
+
+#meet {
+    color:#038C3E;
+}
+
+#H {
+    background-color: #ea0b0b;
+    color: white;
+    width: 100px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+#phone {
+    color: #ea0b0b;
+}
+
+#add {
+    color: #038C3E;
+}
+
+#p1 {
+    color: #038C3E;
+}
+
+#p2 {
+    color:#f5b102;
+}
+
+#p3 {
+    color: #049DD9;
+}
+#compassion{
+   color: #ea0b0b;
+       
+}
+#excellence{
+    color:#038C3E;
+}
+#innovation{
+    color:#f5b102;
+}
+#integrity{
+    color: #049DD9;
+}
