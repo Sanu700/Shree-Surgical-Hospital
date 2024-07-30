@@ -4,8 +4,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const prevBtn = document.querySelector('.carousel-prev');
     const nextBtn = document.querySelector('.carousel-next');
 
-    let counter = 0;
+    let counter = 1;
     const size = images[0].clientWidth;
+
+    carouselImages.style.transform = 'translateX(' + (-size * counter) + 'px)';
 
     nextBtn.addEventListener('click', () => {
         if (counter >= images.length - 1) return;
@@ -21,7 +23,6 @@ document.addEventListener('DOMContentLoaded', () => {
         carouselImages.style.transform = 'translateX(' + (-size * counter) + 'px)';
     });
 
-    // Loop back to the start or end when reaching the last or first image
     carouselImages.addEventListener('transitionend', () => {
         if (images[counter].id === 'lastClone') {
             carouselImages.style.transition = 'none';
@@ -33,5 +34,11 @@ document.addEventListener('DOMContentLoaded', () => {
             counter = images.length - counter;
             carouselImages.style.transform = 'translateX(' + (-size * counter) + 'px)';
         }
+    });
+
+    window.addEventListener('resize', () => {
+        const newSize = images[0].clientWidth;
+        carouselImages.style.transition = 'none';
+        carouselImages.style.transform = 'translateX(' + (-newSize * counter) + 'px)';
     });
 });
