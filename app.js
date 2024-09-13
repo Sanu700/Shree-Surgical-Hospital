@@ -29,9 +29,9 @@ app.get('/contact', (req, res) => {
 });
 
 app.post('/contact', (req, res) => {
-    // Handle form submission
+    
     const { name, email, message } = req.body;
-    // Add your form handling code here (e.g., send an email, save to database, etc.)
+
     res.send('Thank you for your message!');
 });
 
